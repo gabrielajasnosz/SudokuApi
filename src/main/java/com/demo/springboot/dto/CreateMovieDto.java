@@ -1,17 +1,31 @@
 package com.demo.springboot.dto;
 
 public class CreateMovieDto {
-    private Integer movieId;
+
     private String title;
+    private Integer year;
+    private String image;
 
     public CreateMovieDto() {
     }
 
-    public Integer getMovieId() {
-        return movieId;
+    public CreateMovieDto(String title, Integer year, String image) {
+        this.title = title;
+        this.year = year;
+        this.image = image;
     }
+
 
     public String getTitle() {
         return title;
     }
+
+    public Integer getYear() {
+        return year;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
 }
