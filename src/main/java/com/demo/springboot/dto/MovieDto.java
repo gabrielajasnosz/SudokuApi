@@ -1,7 +1,15 @@
-package com.demo.springboot.dto;
+package com.example.demo.dto;
 
 public class MovieDto {
-    private Integer movieId;
+
+    private Integer id;
+
+    public MovieDto(Integer id, String title, Integer year, String image) {
+        this.id = id;
+        this.title = title;
+        this.year = year;
+        this.image = image;
+    }
 
     private String title;
     private Integer year;
@@ -10,46 +18,38 @@ public class MovieDto {
     public MovieDto() {
     }
 
-    public MovieDto(Integer movieId, String title, Integer year, String image) {
-        this.movieId = movieId;
-        this.title = title;
-        this.year = year;
-        this.image = image;
+
+    public Integer getId() {
+        return id;
     }
 
-    public MovieDto(MovieDto movieDto) {
-        this.movieId = movieDto.movieId;
-        this.title = movieDto.title;
-        this.year = movieDto.year;
-        this.image = movieDto.image;
-    }
-
-
-    public Integer getMovieId() {
-        return movieId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public Integer getYear() {
-        return year;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Integer getYear() {
+        return year;
     }
 
     public void setYear(Integer year) {
         this.year = year;
     }
 
+    public String getImage() {
+        return image;
+    }
+
     public void setImage(String image) {
         this.image = image;
     }
+
+
 }
