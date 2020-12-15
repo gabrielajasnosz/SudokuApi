@@ -1,6 +1,7 @@
 package com.demo.springboot.repository;
 
-import com.example.demo.dto.MovieListDto;
+
+import com.demo.springboot.dto.MovieListDto;
 
 public interface MovieRepository {
     public MovieListDto getMovies();

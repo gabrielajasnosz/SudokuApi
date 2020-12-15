@@ -1,7 +1,7 @@
 package com.demo.springboot.service;
 
+import com.demo.springboot.dto.MovieListDto;
 import com.demo.springboot.repository.MovieRepository;
-import com.example.demo.dto.MovieListDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

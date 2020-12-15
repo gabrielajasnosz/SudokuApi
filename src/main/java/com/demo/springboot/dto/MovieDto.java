@@ -1,30 +1,31 @@
-package com.example.demo.dto;
+package com.demo.springboot.dto;
 
 public class MovieDto {
 
-    private Integer id;
 
-    public MovieDto(Integer id, String title, Integer year, String image) {
-        this.id = id;
+
+    private Integer movieId;
+    private String title;
+    private Integer year;
+    private String image;
+
+    public MovieDto(Integer movieId, String title, Integer year, String image) {
+        this.movieId = movieId;
         this.title = title;
         this.year = year;
         this.image = image;
     }
 
-    private String title;
-    private Integer year;
-    private String image;
 
     public MovieDto() {
     }
 
-
-    public Integer getId() {
-        return id;
+    public Integer getMovieId() {
+        return movieId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setMovieId(Integer movieId) {
+        this.movieId = movieId;
     }
 
     public String getTitle() {

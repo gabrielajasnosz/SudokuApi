@@ -1,8 +1,7 @@
 package com.demo.springboot.repository;
 
-
-import com.example.demo.dto.MovieDto;
-import com.example.demo.dto.MovieListDto;
+import com.demo.springboot.dto.MovieDto;
+import com.demo.springboot.dto.MovieListDto;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
